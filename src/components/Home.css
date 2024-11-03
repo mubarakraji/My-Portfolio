@@ -1,0 +1,160 @@
+/* Home Component Styles */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #000;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .home-content {
+    max-width: 500px;
+    color: #333;
+    z-index: 2;
+  }
+  
+  .hello {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  .homeText {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    line-height: 1.2;
+    color: #fff;
+  }
+  
+  .homeName {
+    color: yellow;
+  }
+  
+  .homePara {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+  }
+  
+  .btnImg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.3;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .home {
+      padding: 1.5rem;
+    }
+    
+    .homeText {
+      font-size: 3rem;
+    }
+    
+    .homePara {
+      font-size: 0.9rem;
+    }
+    
+    .bg {
+      width: 55%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .home-content {
+      max-width: 100%;
+    }
+    
+    .hello {
+      font-size: 1.8rem;
+    }
+    
+    .homeText {
+      font-size: 2.5rem;
+    }
+    
+    .homePara {
+      font-size: 0.95rem;
+    }
+    
+    .bg {
+      width: 100%;
+      height: 50vh;
+      position: relative;
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home {
+      padding: 1rem;
+    }
+    
+    .hello {
+      font-size: 1.5rem;
+    }
+    
+    .homeText {
+      font-size: 2rem;
+    }
+    
+    .homePara {
+      font-size: 0.85rem;
+    }
+    
+    .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    
+    .btnImg {
+      width: 1.2rem;
+      height: 1.2rem;
+      color: #000;
+    }
+    
+    .bg {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+  

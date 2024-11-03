@@ -1,0 +1,170 @@
+/* General Styles */
+.contact {
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.contactTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.contactDesc {
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+    color: #fff;
+}
+
+.contactForm {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+.name, .email, .msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
+    padding: 0.75rem;
+}
+
+.submitBtn {
+    background: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 0.75rem 3.5rem;
+    cursor: pointer;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.link {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.7rem;
+    object-fit: cover;
+    border-radius: 50%; /* Make icons circular */
+    transition: transform 0.3s ease;
+}
+
+.link:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+
+/* Small screens (phones) */
+@media (max-width: 600px) {
+    .contactTitle {
+        font-size: 2rem;
+    }
+
+    .contactDesc {
+        font-size: small;
+        padding: 0.5rem;
+    }
+
+    .contactForm {
+        width: 90vw;
+    }
+
+    .name, .email, .msg {
+        max-width: 100%;
+    }
+
+    .link {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 0 0.5rem;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .contactTitle {
+        font-size: 2.5rem;
+    }
+
+    .contactDesc {
+        font-size: medium;
+        padding: 1rem;
+    }
+
+    .contactForm {
+        width: 80vw;
+    }
+
+    .link {
+        height: 3rem;
+        width: 3rem;
+    }
+}
+
+/* Large screens (laptops and desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .contactTitle {
+        font-size: 3rem;
+    }
+
+    .contactDesc {
+        font-size: large;
+    }
+
+    .contactForm {
+        width: 70vw;
+    }
+
+    .link {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+}
+
+/* Extra-large screens */
+@media (min-width: 1201px) {
+    .contactTitle {
+        font-size: 3.5rem;
+    }
+
+    .contactDesc {
+        font-size: large;
+    }
+
+    .contactForm {
+        width: 60vw;
+    }
+
+    .link {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+.successMessage {
+    color: #4CAF50; /* Green color for success */
+    font-size: 1rem;
+    margin-top: 1rem;
+}

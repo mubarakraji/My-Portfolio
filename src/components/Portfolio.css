@@ -1,0 +1,170 @@
+/* Base Styles */
+.port {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    background-color: #000;
+}
+
+.portTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.portDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.portImgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 65rem;
+}
+
+.portImg {
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.portImg:hover {
+    transform: scale(1.05);
+}
+
+.portBtn {
+    margin: 3rem 0;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.portBtn:hover {
+    background-color: #555;
+}
+
+/* Large Screens (Desktops and larger) */
+@media (min-width: 1200px) {
+    .port {
+        max-width: 80rem;
+        padding: 0 2rem;
+    }
+
+    .portTitle {
+        font-size: 3.5rem;
+    }
+
+    .portDesc {
+        font-size: 1.2rem;
+        max-width: 70rem;
+    }
+
+    .portImgs {
+        gap: 1.5rem;
+    }
+
+    .portImg {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .portBtn {
+        padding: 0.6rem 3rem;
+        font-size: 1.1rem;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+    .portTitle {
+        font-size: 2.5rem;
+    }
+
+    .portDesc {
+        font-size: 0.95rem;
+        padding: 0 0.5rem;
+    }
+
+    .portImgs {
+        gap: 0.8rem;
+    }
+
+    .portImg {
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+    .portTitle {
+        font-size: 2rem;
+    }
+
+    .portDesc {
+        font-size: 0.9rem;
+    }
+
+    .portImgs {
+        gap: 0.5rem;
+    }
+
+    .portImg {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .portBtn {
+        padding: 0.4rem 2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Screens (Small Phones) */
+@media (max-width: 480px) {
+    .port {
+        padding: 0;
+    }
+
+    .portTitle {
+        font-size: 1.8rem;
+    }
+
+    .portDesc {
+        font-size: 0.85rem;
+    }
+
+    .portImgs {
+        gap: 0.3rem;
+    }
+
+    .portImg {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .portBtn {
+        padding: 0.3rem 1.5rem;
+        font-size: 0.85rem;
+    }
+}

@@ -1,0 +1,152 @@
+/* About Component Styles */
+.about {
+    overflow: hidden;
+    min-height: 100vh; 
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: black;
+}
+
+.aboutTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.aboutDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 1.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.aboutBars {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 80%;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+    margin-bottom: 1rem;
+}
+
+.aboutBarImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+    border-radius: 0.3rem;
+}
+.aboutBarText {
+    width: calc(100% - 5rem); /* Full width minus space for image */
+    text-align: left;
+}
+
+.aboutBarText > h2,
+.aboutBarText > p {
+    margin: 0;
+    padding: 0; /* Removes any default padding for consistency */
+    color: #fff;
+}
+
+.aboutBarText > h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem; /* Adds slight spacing between h2 and p */
+}
+
+.aboutBarText > p {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .aboutTitle {
+        font-size: 2rem;
+    }
+    .aboutDesc {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+    .aboutBars {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+    .aboutBarImg {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .aboutBarText > h2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutTitle {
+        font-size: 1.8rem;
+    }
+    .aboutDesc {
+        font-size: 0.85rem;
+    }
+    .aboutBars {
+        padding: 0.8rem;
+    }
+    .aboutBarImg {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .aboutBarText > h2 {
+        font-size: 1rem;
+    }
+    .aboutBarText > p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Large Screen Styles */
+@media (min-width: 1200px) {
+    .about {
+        max-width: 80rem; /* Increase max width for large screens */
+        padding: 3rem 2rem; /* Increase padding for more spacious layout */
+    }
+
+    .aboutTitle {
+        font-size: 3rem; /* Larger font size for title */
+        margin-bottom: 2rem;
+    }
+
+    .aboutDesc {
+        font-size: 1.1rem;
+        padding: 0 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .aboutBars {
+        padding: 2rem 3rem;
+        max-width: 70%; /* Narrower max-width to keep content centered */
+    }
+
+    .aboutBarText > h2 {
+        font-size: 1.5rem; /* Larger font size for headings */
+    }
+
+    .aboutBarText > p {
+        font-size: 1rem;
+    }
+}
