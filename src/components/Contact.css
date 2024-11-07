@@ -1,7 +1,7 @@
 /* General Styles */
 .contact {
     min-height: calc(100vh - 4rem);
-    width: 100vw;
+    /* width: 100vw; */
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -67,7 +67,7 @@
     width: 3rem;
     margin: 0 0.7rem;
     object-fit: cover;
-    border-radius: 50%; /* Make icons circular */
+    border-radius: 50%; 
     transition: transform 0.3s ease;
 }
 
@@ -164,7 +164,7 @@
     }
 }
 .successMessage {
-    color: #4CAF50; /* Green color for success */
+    color: #4CAF50; 
     font-size: 1rem;
     margin-top: 1rem;
 }
