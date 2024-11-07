@@ -7,7 +7,7 @@ import n4 from "../assets/n4.jpg";
 
 const Clients = () => {
   return (
-    <div className="client">
+    <section id="clients" className="client">
       <div className="clients">
         <h1 className="clientTitle">My Clients</h1>
         <p className="clientDesc">
@@ -21,7 +21,7 @@ const Clients = () => {
           <img src={n4} alt="Client 4" className="clientImg" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

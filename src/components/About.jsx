@@ -6,7 +6,7 @@ import a1 from "../assets/a1.jpg";
 
 const About = () => {
   return (
-    <div className="about">
+    <section id="about" className="about">
       <span className="aboutTitle">What I Do</span>
       <span className="aboutDesc">
         I am a skilled and passionate web designer with experience in creating
@@ -35,7 +35,7 @@ const About = () => {
           <p>You can write text related to mobile app development here.</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

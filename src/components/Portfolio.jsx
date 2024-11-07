@@ -9,7 +9,7 @@ import p6 from '../assets/p6.jpg';
 
 const Portfolio = () => {
   return (
-    <div className="port">
+    <section id='portfolio' className="port">
       <h2 className="portTitle">My Portfolio</h2>
       <span className="portDesc">
         I take pride in paying attention to the smallest details and making sure that my work is pixel-perfect.
@@ -25,7 +25,7 @@ const Portfolio = () => {
         <img src={p6} alt="Portfolio 6" className="portImg" />
       </div>
       <button className="portBtn">See More</button>
-    </div>
+    </section>
   );
 };
 

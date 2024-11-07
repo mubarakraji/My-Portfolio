@@ -1,8 +1,9 @@
 .header {
     background-color: #000;
-}
-
-.navbar {
+    position: fixed;
+  }
+  
+  .navbar {
     height: 5rem;
     width: 100vw;
     max-width: 75rem;
@@ -13,60 +14,113 @@
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 3;
-}
-
-.logo {
+    z-index: 3; 
+  }
+  
+  .logo {
     object-fit: cover;
     height: 3rem;
     width: 4rem;
-}
-
-.desktop-menu {
+  }
+  
+  .desktop-menu {
     display: flex;
     align-items: center;
-}
-
-.desktopMenuListItem {
+  }
+  
+  .desktopMenuListItem {
     margin: 1rem;
     cursor: pointer;
     text-decoration: none;
     color: #fff;
-}
-
-.desktopMenuListItem:hover {
+  }
+  
+  .desktopMenuListItem:hover {
     color: yellow;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid yellow;
-}
-
-/* Increased size of the button */
-.desktopmenuBtn {
+  }
+  
+  .desktopmenuBtn {
     background: white;
     color: black;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 2rem; /* Increased padding for more height and width */
+    padding: 0.75rem 2rem;
     font-size: 1rem;
-    border-radius: 2.5rem; /* Slightly larger border-radius for a rounded button look */
+    border-radius: 2.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.desktopmenuBtn:hover {
+  }
+  
+  .desktopmenuBtn:hover {
     background-color: #f0f0f0;
-}
-
-.desktopmenuImg {
-    object-fit: cover;
+  }
+  
+  /* Styles for SVG icon */
+  .desktopmenuImg {
     height: 1.2rem;
     width: 1.2rem;
     margin-right: 0.5rem;
-}
-.active{
+    color: inherit; 
+  }
+  
+  .active {
     color: yellow;
-    padding-bottom:0.5rem ;
-    border-radius: 3px solid yellow;
-}
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+  }
+  
+  .mobMenu {
+    cursor: pointer; 
+  }
+  
+  .navMenu {
+    position: absolute; 
+    top: 5rem; 
+    right: 0; 
+    z-index: 4; 
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    min-width: 15rem;
+    background: white; 
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .ListItem {
+    color: black; 
+    padding: 0.5rem 1rem; 
+    margin: 0.25rem 0;
+    text-decoration: none; 
+  }
+  
+  .ListItem:hover {
+    background-color: #f0f0f0; 
+    border-radius: 0.5rem; 
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (min-width: 768px) {
+    .mobMenu {
+      display: none; 
+    }
+    
+    .navMenu {
+      display: none; 
+    }
+  
+    .desktop-menu {
+      display: flex; 
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .desktop-menu {
+      display: none; 
+    }
+  }
+  

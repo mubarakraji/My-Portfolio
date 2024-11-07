@@ -2,7 +2,6 @@
 .about {
     overflow: hidden;
     min-height: 100vh; 
-    width: 100vw;
     max-width: 65rem;
     display: flex;
     flex-direction: column;

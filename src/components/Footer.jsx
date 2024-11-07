@@ -3,7 +3,8 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className='footer'>
-        Copyright&8117; 2024 Mubarak Raji.All right received.
+          &copy; 2024 Mubarak Raji. All rights reserved.
+
     </div>
   )
 }
