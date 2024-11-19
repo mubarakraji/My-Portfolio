@@ -19,7 +19,7 @@ const Home = () => {
             Website Designer
           </p>
           <p className="homePara">
-            With 4+ months of focused experience in software development, I’m
+            With 10+ months of focused experience in software development, I’m
             diving deep into programming with a passion for creating beautiful
             and effective solutions. My journey may be new, but I'm dedicated to
             transforming complex problems into simple, elegant user interfaces
